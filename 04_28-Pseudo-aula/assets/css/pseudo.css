@@ -1,0 +1,63 @@
+input:focus {
+    outline: none;
+    background-color: #793f1d36;
+}
+
+input:valid {
+    border-color: #793f1d;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+::placeholder {
+    color: #793f1d
+}
+
+textarea:disabled {
+    background-color: #f8eee2;
+    border-color: #a1a1a1;
+    cursor: not-allowed;
+}
+
+textarea::placeholder {
+    color: #a1a1a1;
+}
+
+input[type="submit"]:hover {
+    background-color: #94150a;
+}
+
+.modelo {
+    p::first-letter {
+        font-family: "Lavishly Yours";
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    p::selection {
+        color: #d81806;
+        background-color: #e6dbcf;
+    }
+}
+
+li:not(.top3) {
+    color: gray;
+}
+
+li:first-child {
+    color: green;
+    font-weight: 700;
+}
+
+li:last-child {
+    color: red;
+}
+
+::marker {
+    font-weight: 700;
+    font-size: 24px;
+    color: #94150a;
+}
