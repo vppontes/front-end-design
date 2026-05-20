@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/variables.css">
+        <link rel="stylesheet" href="./css/components.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Semântica e Componentização</title>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#banner" class="menu-item">Início</a></li>
+                    <li><a href="#food" class="menu-item">Gastronomia</a></li>
+                    <li><a href="#itinerary" class="menu-item">Roteiro</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="banner" class="flex">
+                <h1 class="title">Descubra a alma do Japão</h1>
+                <p class="text">Uma jornada pelas tradições e paisagens</p>
+                
+                <div class="flex">
+                    <a href="#food" class="btn btn-primary">Iniciar jornada</a>
+                    <a href="#itinerary" class="btn">Ver roteiros</a>
+                </div>
+            </section>
+
+            <section id="food">
+                <h2 class="title">Gastronomia milenar</h2>
+
+                <figure class="flex">
+                    <img src="./images/sushi.jpg" alt="Sushi">
+                    <img src="./images/lamen.jpg" alt="Lamen">
+                    <img src="./images/kaiseki.jpg" alt="Kaiseki">
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+            <p class="text">Copyright &copy; 2026</p>
+            <h6 class="text">Desenvolvido por: Victor Pontes</h6>
+        </footer>
+
+    </body>
+</html>

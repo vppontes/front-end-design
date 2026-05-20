@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/pseudo.css">
+    <title>Pseudo</title>
+</head>
+<body>
+    
+    <section class="livro">
+        <div class="pedido">
+            <h2>Faça seu pedido:</h2>
+
+            <form action="">
+                <input required type="text" placeholder="Digite seu nome">
+                <input required type="email" placeholder="Digite seu email">
+                <textarea disabled name="observacoes" id="observacoes" placeholder="Observações"></textarea>
+
+                <select name="livros" id="livros">
+                    <option value="" disabled selected>Selecione um livro</option>
+                    <option value="bela-fera">A Bela e a Fera</option>
+                    <option value="branca-neve">Branca de Neve</option>
+                    <option value="pequena-sereia">A pequena sereia</option>
+                    <option value="cinderela">Cinderela</option>
+                    <option value="mulan">Mulan</option>
+                    <option value="magico-oz">O mágico de Oz</option>
+                </select>
+
+                <div class="presente">
+                    <h4>Embrulhar para presente?</h4>
+
+                    <input required type="radio" id="sim" name="presente" value="sim">
+                    <label for="sim">Sim</label>
+
+                    <input required type="radio" id="nao" name="presente" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+
+                <div class="termos">
+                    <input required type="checkbox" id="aceito" name="termos" value="aceito">
+                    <label for="aceito">Li e aceito os termos</label>
+                </div>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        
+        <div class="modelo">
+            <img src="./assets/images/carta-bela.jpg" alt="Carta da Bela e a Fera">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores suscipit maxime in eos deserunt cumque velit vel neque nisi. Hic ipsa velit a explicabo omnis recusandae expedita ex rerum consequuntur?</p>
+        </div>
+    </section>
+    
+    <section class="ranking">
+        <h2>Livros Mais Vendidos</h2>
+
+        <ol>
+            <li class="top3">A Bela e a Fera</li>
+            <li class="top3">Branca de Neve</li>
+            <li class="top3">A pequena sereia</li>
+            <li>Cinderela</li>
+            <li>Mulan</li>
+            <li>O mágico de OZ</li>
+        </ol>
+    </section>
+
+</body>
+</html>
